@@ -1,0 +1,68 @@
+.championship__img {
+  margin-bottom: 15px;
+  height: 234px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.championship {
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 25px;
+}
+
+.championship__content-top {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.championship__term {
+  background: #001222;
+  min-width: 100px;
+  height: 35px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.championship__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.championship__content-bot {
+  display: flex;
+  align-items: center;
+}
+
+.championship__abbr {
+  margin-right: 15px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.championship__place {
+  color: #606060;
+}
+
+@media (max-width: 1279px) {
+  .championship {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .championship {
+    grid-template-columns: 1fr;
+  }
+
+  .championship__title {
+    font-size: 17px;
+  }
+}

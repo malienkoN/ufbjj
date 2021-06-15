@@ -1,0 +1,31 @@
+.title {
+  margin-bottom: 45px;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+
+  position: relative;
+}
+
+.title .lines {
+  display: block;
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title .line {
+  display: block;
+  background: #0071b0;
+  height: 1px;
+
+  &:first-of-type {
+    margin-bottom: 5px;
+    width: 36px;
+  }
+
+  &:last-of-type {
+    width: 21px;
+  }
+}
